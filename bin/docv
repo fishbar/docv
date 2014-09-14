@@ -10,7 +10,7 @@ var program   = require('commander'),
     mkdirp    = require('mkdirp'),
     path      = require('path'),
     dox       = require('dox'),
-    formatter = require('../lib/dox-foundation');
+    formatter = require('../lib/docv');
 
 /**
  * Options & Defaults
@@ -33,13 +33,13 @@ program.on('--help', function(){
   console.log('  Examples:');
   console.log('');
   console.log('    # stdin');
-  console.log('    $ dox-foundation > myfile.html');
+  console.log('    $ docv > myfile.html');
   console.log('');
   console.log('    # operates over stdio');
-  console.log('    $ dox-foundation < myfile.js > myfile.html');
+  console.log('    $ docv < myfile.js > myfile.html');
   console.log('');
   console.log('    # parse a whole folder');
-  console.log('    $ dox-foundation --source lib --target docs');
+  console.log('    $ docv --source lib --target docs');
 });
 
 // parse argv
@@ -84,8 +84,10 @@ if (program.source) {
 
   // Render and save each file
   files.forEach(function(file) {
+    if (!file) {
+      return;
+    }
     var output = formatter.render(file, files, options);
-
     var dir = path.dirname(file.targetFile);
     if (!fs.existsSync(dir)) {
       mkdirp.sync(dir);

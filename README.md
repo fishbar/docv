@@ -4,9 +4,6 @@
 
 Use [dox](https://github.com/visionmedia/dox) to automatically generate beautiful html documentation.
 
-Outputted HTML is based on templates and css from [ZURB's Foundation](http://foundation.zurb.com/) and syntax highlighting is done by [Prism.js](http://prismjs.com/).
-
-
 ## Installation
 Install the module with: `npm install docv -g`
 
@@ -31,13 +28,13 @@ $ docx --help
   Examples:
 
     # stdin
-    $ dox-foundation > myfile.html
+    $ docv > myfile.html
 
     # operates over stdio
-    $ dox-foundation --title "myFile documentation" < myfile.js > myfile.html
+    $ docv --title "myFile documentation" < myfile.js > myfile.html
 
     # parse a whole folder
-    $ dox-foundation --source lib --target docs
+    $ docv --source lib --target docs
 ```
 
 ## License
