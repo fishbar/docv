@@ -1,25 +1,20 @@
-# dox-foundation
+# docv
 
-[![Dependency Status](https://gemnasium.com/punkave/dox-foundation.png)](https://gemnasium.com/punkave/dox-foundation)
+[for now, this is copyed from dox-foundation, rename and modify something](https://github.com/punkave/dox-foundation)
 
 Use [dox](https://github.com/visionmedia/dox) to automatically generate beautiful html documentation.
 
 Outputted HTML is based on templates and css from [ZURB's Foundation](http://foundation.zurb.com/) and syntax highlighting is done by [Prism.js](http://prismjs.com/).
 
-## Example time!
-
-See <http://dox-foundation-demo.herokuapp.com/> ([source](https://github.com/tlvince/dox-foundation-demo)) for an interactive demo, ran against Express.
-
-![A little sneak](http://i.cloudup.com/q9XWQ9B7qk.png)
 
 ## Installation
-Install the module with: `npm install dox-foundation -g`
+Install the module with: `npm install docv -g`
 
 ## Documentation
 ```
-$ dox-foundation --help
+$ docx --help
 
-  Usage: dox-foundation [options]
+  Usage: docv [options]
 
   Options:
 
@@ -44,15 +39,6 @@ $ dox-foundation --help
     # parse a whole folder
     $ dox-foundation --source lib --target docs
 ```
-
-## [Release History](https://github.com/punkave/dox-foundation/releases)
-
-## Thanks & Contributors
-
-* Thanks to [dox-basic](https://github.com/jepso/dox-basic) for the inspiration and much of the original code.
-* [@sdepold](https://github.com/sdepold)
-* [@fgribreau](https://twitter.com/fgribreau)
-* [@phun-ky](https://github.com/phun-kyu)
 
 ## License
 Copyright (c) 2012 P'unk Avenue

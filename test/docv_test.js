@@ -1,6 +1,6 @@
-var formcaster = require('../lib/dox-foundation.js'),
+var formcaster = require('../lib/doxv.js'),
     exec = require('child_process').exec,
-    cmd = require('path').resolve(__dirname + '/../bin/dox-foundation');
+    cmd = require('path').resolve(__dirname + '/../bin/doxv');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
